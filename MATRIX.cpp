@@ -192,8 +192,6 @@ int main()
       case 7:
         exit ;
       break;
-    default:
-      break;
     }
   return 0;
 }
