@@ -49,7 +49,6 @@ void matrix2()
     }
 }
 
-
 int main()
 {
    cout <<endl<< "**********MENU**********" << endl;
