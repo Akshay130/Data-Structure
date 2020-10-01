@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+ int i,n,count=0,temp;
+    cout<<"enter no of socks\n";
+     cin>>n;
+     int a[n];
+     for (i = 0; i < n; i++)
+     {
+       cout<<"enter id of socks "<<i<<endl;
+        cin>>a[i];
+    
+     }
+     for (i = 0; i < n; i++)
+     
+     {
+         for (int j = 0; j < n; j++)
+        {
+            if(a[i]<a[j])
+            {
+                temp=a[i];
+                a[i]=a[j];
+                a[j]=temp;
+            }
+        }
+     }
+    for ( i = 0; i < n; i++)
+    {
+        if (a[i]==a[i+1])
+        {
+            i++;
+          count++;
+        }
+    }
+    for (i = 0; i < n; i++)
+    {
+         cout<<"\t"<<a[i];
+    
+    }
+    cout<<"\nPairs="<<count;
+return 0;
+}
