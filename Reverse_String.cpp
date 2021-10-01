@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-// reverse string
+// reversing string
 
 int main()
 {
